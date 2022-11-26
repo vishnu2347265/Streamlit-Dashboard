@@ -98,7 +98,7 @@ col3.metric("Humidity", "86%", "4%")
 
 # Row B
 seattle_weather = pd.read_csv('https://raw.githubusercontent.com/tvst/plost/master/data/seattle-weather.csv', parse_dates=['date'])
-stocks = pd.read_csv('https://github.com/SaiSpr/Streamlit-Dashboard/blob/main/demo_stocks.csv')
+stocks = pd.read_csv('https://github.com/SaiSpr/Streamlit-Dashboard/blob/main/stocks_toy.csv')
 
 c1, c2 = st.columns((7,3))
 with c1:
