@@ -25,8 +25,8 @@ plot_height = st.sidebar.slider('Specify plot height', 200, 500, 250)
 # Row A
 st.markdown('### Metrics')
 col1, col2, col3 = st.columns(3)
-col1.metric("Temperature", "70 °F", "1.2 °F")
-col2.metric("Wind", "9 mph", "-8%")
+col1.metric("Temperature", "20 °C", "2 °C")
+col2.metric("Wind", "11 kmph", "-8%")
 col3.metric("Humidity", "86%", "4%")
 
 # Row B
