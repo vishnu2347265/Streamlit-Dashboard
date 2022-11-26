@@ -30,14 +30,14 @@ col2.metric("Wind", "11 kmph", "-8%")
 col3.metric("Humidity", "86%", "4%")
 
 # Row B
-weather = pd.read_csv('https://raw.githubusercontent.com/tvst/plost/master/data/seattle-weather.csv', parse_dates=['date'])
+seattle_weather  = pd.read_csv('https://raw.githubusercontent.com/tvst/plost/master/data/seattle-weather.csv', parse_dates=['date'])
 stocks = pd.read_csv('https://github.com/SaiSpr/Streamlit-Dashboard/blob/main/demo_stocks.csv')
 
 c1, c2 = st.columns((7,3))
 with c1:
     st.markdown('### Heatmap')
     plost.time_hist(
-    data = weather,
+    data = seattle_weather ,
     date = 'date',
     x_unit = 'week',
     y_unit = 'day',
@@ -57,4 +57,4 @@ with c2:
 
 # Row C
 st.markdown('### Line chart')
-st.line_chart(weather, x = 'date', y = plot_data, height = plot_height)
+st.line_chart(seattle_weather , x = 'date', y = plot_data, height = plot_height)
