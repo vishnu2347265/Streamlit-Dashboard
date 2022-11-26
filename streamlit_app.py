@@ -25,7 +25,7 @@ plot_height = st.sidebar.slider('Specify plot height', 200, 500, 250)
 
 
 
-# Adding components in the main page
+
 
 # Row A
 st.markdown('### Metrics')
