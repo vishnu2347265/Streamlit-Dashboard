@@ -1,4 +1,4 @@
-# 📦 Dashboard (`version 2`)
+# 📦 Dashboard
 
 This is a dashboard app created in Python using Streamlit.
 
